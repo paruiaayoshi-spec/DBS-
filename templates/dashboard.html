@@ -7,8 +7,8 @@
   </div>
 
   {# Server should inject layout JSON here as a script tag with id="layout-json". If not present, client will fallback to localStorage/default. #}
-  {% if layout %}
-    <script type="application/json" id="layout-json">{{ layout|tojson }}</script>
+  {% if layout_json %}
+    <script type="application/json" id="layout-json">{{ layout_json|tojson }}</script>
   {% endif %}
 
   <div class="grid-wrap">
